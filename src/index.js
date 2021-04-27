@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaListAlt, FaCheckSquare, FaPlusSquare, FaTrash } from 'react-icons/fa';
+
+
 
 class App extends React.Component {
   render() {
@@ -26,10 +30,11 @@ class App extends React.Component {
         </ul>
         <footer className="d-flex justify-content-between bg-secondary p-3" id="mainFooter">
           <div className="btn-group">
-            <a href="#" className="btn btn-outline-dark bg-light">List</a>
-            <a href="#" className="btn btn-outline-dark bg-light">Completed</a>
-            <a href="#" className="btn btn-outline-dark bg-light">Add</a>
+            <a href="#" className="btn btn-outline-dark bg-light"><FaListAlt></FaListAlt> </a>
+            <a href="#" className="btn btn-outline-dark bg-light"><FaCheckSquare></FaCheckSquare></a>
+            <a href="#" className="btn btn-outline-dark bg-light"><FaPlusSquare></FaPlusSquare></a>
           </div>
+          <button className="btn btn-outline-dark bg-light"><FaTrash></FaTrash></button>
         </footer>
       </section>
     )
